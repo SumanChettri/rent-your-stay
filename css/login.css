@@ -1,0 +1,88 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 122, 208);
+}
+
+.form{
+    box-sizing: border-box;
+    background-color: white;
+    width: 30%;
+    padding: 0px 1.5rem 0.8rem 1.5rem;
+    border-radius: 10px;
+}
+
+.login-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(31, 30, 30);
+}
+
+input{
+    height: 30px;
+    margin-top: 1.5rem;
+    width: 100%;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid rgb(166, 165, 165);
+}
+
+.fg{
+    text-decoration: none;
+}
+.fg-pass{
+    margin-top: 1rem;
+    color: rgb(54, 169, 246);
+}
+
+.btn-login{
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px;
+    background-color:rgb(54, 169, 246);
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+}
+.btn-login:hover{
+    background-color: rgb(1, 122, 208);;
+}
+.btn-login:active{
+    opacity: 0.7;
+}
+
+.signup{
+    text-align: center;
+}
+.signup a{
+    color: rgb(54, 169, 246);
+}
+
+@media(max-width: 900px)
+{
+    .form{
+        min-width: 50%;
+    }
+}
+@media(max-width: 550px)
+{
+    .signup a{
+        display: block;
+    }
+}

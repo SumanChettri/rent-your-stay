@@ -1,0 +1,280 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(226, 226, 226);
+}
+
+/*  ************************  Navbar  *************** */
+
+.logo-title{
+    text-shadow: 2px 2px 4px rgb(63, 189, 242);
+}
+
+
+/* ********* FOR  Large Size  **************** */
+
+ .large {
+    height: 3.5rem;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* position: fixed;
+    z-index: 100; */
+    width: 100%;
+}
+
+.logo{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(69, 69, 69);
+    padding-left: 8%;
+    cursor: pointer;
+}
+.large ul{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.large li{
+    list-style: none;
+}
+
+.large a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+}
+
+.large a:hover{
+    color: rgb(102, 177, 252);
+}
+
+.small{
+    display: none;
+}
+
+.small ul{
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 1rem;
+}
+
+.small li{
+    list-style: none;
+    height: 2rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    width:100%;
+}
+
+.small a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+}
+
+.small li:hover{
+    background-color: rgb(141, 209, 249);
+}
+
+.sign-btn{
+    padding: 8px 1rem 8px 1rem;
+    font-weight: 500;
+    background-color: rgb(76, 164, 251);
+    color: white;
+    border:none;
+    border-radius: 5px;
+}
+
+.sign-btn:hover{
+    background-color: rgb(53, 130, 207);
+    color: white;
+    cursor: pointer;
+}
+.sign-btn:active{
+    opacity: 0.7;
+}
+
+.menu-btn{
+    padding: 14px 15px 14px 15px;
+    color: black;
+    border: none;
+    background-color: rgb(76, 164, 251);
+    border-radius: 3px;
+    position: absolute;
+    top: 1.3rem;
+    right: 1.5rem;
+    transform: rotate(90deg);
+}
+
+.menu-btn:active{
+    opacity: 0.7;
+}
+
+.show-list{
+    display: none;
+}
+
+@media(max-width: 675px)
+{
+    .large{
+        display:none;
+    }
+
+    .small{
+        display: block;
+    }
+}
+
+
+
+
+/*  *****************  Main  ********************** */
+
+main{
+    background-color: white;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.section{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0px auto;
+    gap: 1rem;
+}
+
+.room{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    /* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); */
+
+}
+
+.room:focus,
+.room:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.room-pic-div{
+    flex-basis: 45%;
+    text-align: center;
+}
+.room-image{
+    width: 85%;
+}
+
+.room-detail{
+    flex-basis: 55%;
+    padding-left: 2rem;
+    
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(50, 50, 50); 
+}
+.room-name{
+    font-weight: 700;
+    color: rgb(33, 33, 33);
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+.room-place{
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+.room-price{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.per-month{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.view-btn{
+    margin-top: 1rem;
+    padding: 8px 1.5rem 8px 1.5rem;
+    background-color: rgb(4, 128, 200);
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 1rem;
+}
+.view-btn a{
+    text-decoration: none;
+    color: white;
+}
+.view-btn:hover{
+    background-color:  rgb(5, 117, 182);
+    color: white;
+}
+.view-btn:active{
+    opacity: 0.7;
+}
+
+/* ***************************  Footer ************************ */
+
+.footer{
+    /* margin-top: 50px; */
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly; 
+    background-color:  rgb(38, 37, 37); 
+    height: 150px;
+}
+
+.footer a{
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media(max-width: 730px)
+{
+    .room{
+        flex-direction: column;
+    }
+    .room-pic-div{
+        height: 50%;
+    }
+    .room-image{
+        width: 75%;
+    }
+
+    .room-detail{
+        padding-left: 4rem;
+    }
+    .footer{
+            flex-direction: column;
+            text-align: center;
+            padding-top: 2.5rem;
+            padding-bottom: 6rem;
+    }
+}
